@@ -1,5 +1,5 @@
 {
-  "name": "twix",
+  "name": "Folktales",
   "version": "1.0.0",
   "description": "A conversational storyteller for Alexa",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/japhv/twix.git"
+    "url": "git+https://github.com/japhv/folktales.git"
   },
   "keywords": [
     "Alexa",
@@ -18,9 +18,9 @@
   "author": "Japheth Adhavan, Amit Jaisinghani",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/japhv/twix/issues"
+    "url": "https://github.com/japhv/folktales/issues"
   },
-  "homepage": "https://github.com/japhv/twix#readme",
+  "homepage": "https://github.com/japhv/folktales#readme",
   "dependencies": {
     "alexa-sdk": "^1.0.25",
     "aws-sdk": "^2.188.0",
