@@ -1,0 +1,24 @@
+{
+  "name": "twix",
+  "version": "1.0.0",
+  "description": "A conversational storyteller for Alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japhv/twix.git"
+  },
+  "keywords": [
+    "Alexa",
+    "AWS",
+    "ElasticSearch"
+  ],
+  "author": "Japheth Adhavan, Amit Jaisinghani",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/japhv/twix/issues"
+  },
+  "homepage": "https://github.com/japhv/twix#readme"
+}
