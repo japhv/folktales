@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/japhv/twix/issues"
   },
-  "homepage": "https://github.com/japhv/twix#readme"
+  "homepage": "https://github.com/japhv/twix#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+    "aws-sdk": "^2.188.0",
+    "elasticsearch": "^14.0.0",
+    "http-aws-es": "^4.0.0"
+  }
 }
