@@ -10,10 +10,10 @@
 const Alexa = require('alexa-sdk');
 const appConstants = require('./constants.js');
 
-const SKILL_NAME = 'Mavis';
-const HELP_MESSAGE = `Mavis tells you the story you want to hear. 
+const SKILL_NAME = 'Folktale';
+const HELP_MESSAGE = `Folktale tells you the story you want to hear. 
   Suppose you want to listen to a fox story, just say "Tell me a fox story". 
-  Now try asking Mavis a story you would like to hear.`;
+  Now try asking Folktale a story you would like to hear.`;
 const HELP_REPROMPT = "Try saying, tell me a fox story.";
 const STOP_MESSAGE = 'Goodbye!';
 
