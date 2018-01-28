@@ -1,4 +1,6 @@
-constants.js
+# Ignore changes to the constants file
+lambda/constants.js
+
 # Logs
 logs
 *.log

@@ -3,6 +3,8 @@
  * 
  * @author Japheth Adhavan
  * @author Amit Jaisinghani
+ *
+ * @skill_name: Folktales
  */
 
 "use strict";
@@ -14,7 +16,6 @@ const ESClient = require("elasticsearch").Client({
     connectionClass: require('http-aws-es')
 });
 
-const SKILL_NAME = 'Folktales';
 const HELP_MESSAGE = `Folktales can tell you any kind of story. 
   For example, if you want to listen to a fox story, just say "Tell me a fox story". 
   Now try asking Folktales a story you would like to hear.`;
