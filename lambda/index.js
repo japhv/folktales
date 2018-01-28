@@ -14,7 +14,6 @@ const ESClient = require("elasticsearch").Client({
     connectionClass: require('http-aws-es')
 });
 
-
 const SKILL_NAME = 'Folktales';
 const HELP_MESSAGE = `Folktales can tell you any kind of story. 
   For example, if you want to listen to a fox story, just say "Tell me a fox story". 
@@ -23,7 +22,9 @@ const HELP_REPROMPT = "Try saying, tell me a fox story.";
 const STOP_MESSAGE = 'Goodbye!';
 
 const folkTaleHandlers = {
-
+    'LaunchRequest': function () {
+        this.emit(":ask", "Welcome to folktales! What story would you like to hear?", "Sorry, could you repeat that?");
+    },
     'AMAZON.HelpIntent': function () {
         this.emit(":ask", HELP_MESSAGE, HELP_REPROMPT);
     },
