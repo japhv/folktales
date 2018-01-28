@@ -10,9 +10,9 @@
 "use strict";
 
 const Alexa = require('alexa-sdk');
-const appConstants = require('./constants.js');
+
 const ESClient = require("elasticsearch").Client({
-    hosts: [appConstants.ELASTICSEARCH_HOST],
+    hosts: [process.env.ELASTICSEARCH_HOST],
     connectionClass: require('http-aws-es')
 });
 
@@ -76,15 +76,14 @@ const folkTaleHandlers = {
                 this.emit(":tell", "Sorry, I don't know that story!");
                 console.trace(err.message);
             });
-        }
     }
 };
 
 // Handler for AWS lambda
 exports.handler = function (event, context, callback) {
     const alexa = Alexa.handler(event, context);
-    alexa.appId = appConstants.APP_ID;
-    alexa.dynamoDBTableName = appConstants.DYNAMODB_TABLE;
+    alexa.appId = process.env.APP_ID;
+    alexa.dynamoDBTableName = process.env.DYNAMODB_TABLE;
     alexa.registerHandlers(folkTaleHandlers);
     alexa.execute();
 };
