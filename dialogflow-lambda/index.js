@@ -12,7 +12,7 @@ const ESClient = require("elasticsearch").Client({
 });
 
 exports.handler = function(event, context, callback) {
-    let storyType = event.result.parameters['storyType'] | "random";
+    let storyType = event.result.parameters['storyType'] || "random";
     let esParams = getESParams(storyType);
 
     ESClient
