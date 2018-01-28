@@ -1,0 +1,19 @@
+{
+  "name": "folktales-google-app",
+  "version": "1.0.0",
+  "description": "Folktale app for Google Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japhv/folktales.git"
+  },
+  "author": "Japheth Adhavan",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/japhv/folktales/issues"
+  },
+  "homepage": "https://github.com/japhv/folktales#readme"
+}
